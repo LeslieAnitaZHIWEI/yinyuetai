@@ -1,0 +1,266 @@
+@mixin center() {
+    margin: 0 auto;
+    width: 1200px
+}
+
+@mixin floatli($w, $h) {
+    margin: 0;
+    li {
+        float: left;
+        width: $w;
+        line-height: $h;
+        text-align: center;
+    }
+}
+
+@import 'header';
+@import 'footer';
+@import 'dialog';
+
+.wrapper {
+    @include center;
+}
+
+.contenthead {
+    padding: 61px 0 20px;
+    height: 36px;
+    width: 1000px;
+    margin:0 auto;
+}
+
+.tittle {
+    float: left;
+    padding-left: 16px;
+    font-size: 16px;
+    color: #e14768;
+    font-family: \5fae\8f6f\96c5\9ed1;
+    i {
+        background: url(../images/ico_pay_v3.png) no-repeat;
+        height: 36px;
+        margin-right: 10px;
+        vertical-align: middle;
+        display: inline-block;
+        overflow: hidden;
+        width: 36px;
+        background-position: -99px 0;
+    }
+}
+
+.write {
+    float: right;
+
+    .confirm {
+        color: #e14768;
+        width: 137px;
+        height: 32px;
+        font-size: 14px;
+        line-height: 30px;
+        overflow: hidden;
+        display: inline-block;
+        background: url(../images/ico_pay_v3.png) no-repeat;
+        background-position: -141px -39px;
+        float: left;
+    }
+    .num {
+        float: left;
+        font-size: 18px;
+        color: #e14768;
+        width: 30px;
+        margin-right: 5px;
+        text-align: center;
+        display: inline-block;
+    }
+    .cur {
+        color: #fff;
+        background-position: 0 -39px;
+    }
+    .line {
+    font-size: 26px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #fff;
+    float: left;
+}
+}
+
+.infowrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 12px 20px 20px;
+    min-height: 600px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.info {
+    padding: 10px 20px;
+    border: 1px solid #efefef;
+    overflow: hidden;
+    color: #666;
+    display:none;
+}
+.cart-empty {
+    margin-top: 9%;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+.divempty {
+    width: 191px;
+    height: 158px;
+    background: url(../images/cartempty.png);
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.pay_cart_list {
+    width: 916px;
+    overflow: hidden;
+    table {
+        margin-top: -1px;
+    }
+    td {
+        border-color: #e8f1e8;
+        border-style: solid;
+        border-width: 1px 1px 0 0;
+        line-height: 1.5;
+    }
+    .pos {
+        position: relative;
+    }
+    a {
+        color: #333;
+    }
+    .pic {
+        width: 80px;
+        height: 80px;
+        margin: 20px 14px 21px 3px;
+        border: 1px solid #edf1f2;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .c_6 {
+        color: #666;
+        &:hover{
+    color: #e14768;
+    text-decoration: none;
+}
+    }
+    tr .ico_close {
+        display: none;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 18px;
+    overflow: hidden;
+    text-indent: -9999em;
+    background: url(../images/ico20_1113.png) no-repeat;
+    background-position: 0 -620px;
+
+    z-index: 10;
+    &:hover{
+            background-position: 0 -640px
+    }
+    }
+    .pay_cart_plus,
+    .pay_cart_minus {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        border: 1px solid #8a8a8a;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .input_text {
+        border: none;
+        background: #f7f7f7;
+    }
+    .pay_cart_num {
+        width: 28px;
+        height: 20px;
+        line-height: 20px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 0;
+        vertical-align: middle;
+    }
+    .c_f63 {
+        color: #e14768;
+    }
+    .f18 {
+        font-size: 18px;
+    }
+}
+
+.pay_cart_total {
+    position: relative;
+    height: 46px;
+    padding: 10px;
+    border: 1px solid #e8f1e8;
+    .num {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        height: 46px;
+        margin-top: -25px;
+    }
+    .f30 {
+        font-size: 30px;
+    }
+    .c_f63 {
+        color: #e14768;
+    }
+}
+
+.pay_cart_btn {
+    padding: 20px 0;
+    overflow: hidden;
+    .pay_btn {
+        width: 100px;
+        height: 34px;
+        line-height: 34px;
+        padding: 0;
+    }
+}
+
+.pay_cancel_btn {
+    height: 34px;
+    line-height: 34px;
+    padding: 0;
+    color: #666;
+    background-color: #e5e5e5;
+    margin-right: 10px;
+    width: 80px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.fr {
+    float: right;
+}
+
+.pay_btn,
+.pay_disabled {
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    background-color: #e14768;
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

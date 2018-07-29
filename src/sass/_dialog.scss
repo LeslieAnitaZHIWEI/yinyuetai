@@ -1,0 +1,313 @@
+.dialog {
+    margin-left: -375px;
+    margin-top: -190px;
+    width: 750px;
+    height: 380px;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    border-radius: 3px;
+    background-color: #fff;
+    _position: absolute;
+    -moz-box-shadow: 0 0 15px #000;
+    -webkit-box-shadow: 0 0 15px #000;
+    box-shadow: 0 0 15px #000;
+    border: 1px solid #ececec;
+    .ico_close {
+    top: 2px;
+    position: absolute;
+    right: 5px;
+display: inline-block;
+    overflow: hidden;
+    text-indent: -9999em;
+    background: url(../images/ico20_1113.png) no-repeat;
+    z-index: 10;
+    width: 20px;
+    height: 18px;
+    color: #333;
+    background-position: 0 -620px;
+    &:hover{
+    background-position: 0 -640px;
+
+    }
+}
+a{
+
+    color: #333;
+}
+}
+#register-area{
+    display: none;
+}
+.login-register {
+    position: relative;
+    width: 750px;
+    height: 380px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.login-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/temp-bg.jpg);
+    background-position: bottom center;
+}
+.code-list li:hover{
+    background:#ECECEC
+}
+
+.login-view {
+    position: absolute;
+    width: 280px;
+    right: 60px;
+    top: 0;
+    z-index: 2;
+    font-size: 12px;
+    .login-tab {
+        font-size: 20px;
+        color: #474c56;
+        line-height: 72px;
+        height: 72px;
+        a {
+            float: left;
+            width: 50%;
+            text-align: center;
+            height: 71px;
+            border-bottom: 1px solid #e1e1e7;
+        }
+    }
+    a.login-active {
+        height: 70px;
+        color: #27d5bf;
+        border-bottom: 2px solid #27d5bf;
+    }
+
+    .login-error-tips {
+        margin: 5px 0;
+        height: 20px;
+        line-height: 20px;
+        color: #ff6699;
+    }
+}
+
+.inter-content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    .login-text-long {
+        flex: 1;
+        -webkit-flex: 1;
+        -moz-box: 1;
+        -ms-flexbox: 1;
+        width: 152px;
+        border-left: 0;
+        margin-left: -2px;
+        padding-left: 15px;
+    }
+
+}
+
+.area-code-content {
+    position: relative;
+    display: block;
+    padding: 0 15px;
+    text-align: center;
+    float: left;
+    background: url(../images/xiala.png) no-repeat;
+    background-position: 98% center;
+    cursor: pointer;
+    z-index: 10;
+    border: solid 1px #e1e1e7;
+    height: 38px;
+    line-height: 38px;
+    border-right: 0;
+    background-color: #fff;
+    .code-list {
+        position: absolute;
+        left: -1px;
+        top: 44px;
+        border: solid 1px #ddd;
+        width: 125px;
+        background: #fff;
+        padding: 4px 0;
+        border-radius: 5px;
+        li {
+            height: 27px;
+            line-height: 27px;
+            text-align: left;
+            padding-left: 11px;
+            color: rgba(117, 117, 117, 1);
+        }
+    }
+}
+
+.login-auto {
+    cursor: pointer;
+    color: #999;
+    span {
+        vertical-align: middle;
+        position: relative;
+        top: -1px;
+        line-height: 14px;
+    }
+    input {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+     a {
+    color: #555;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+}
+
+.login-text-long {
+    width: 258px;
+    margin-bottom: 15px;
+}
+
+.login-text-long,
+.login-text-short {
+    padding: 10px;
+    line-height: 18px;
+    border: 1px solid #e1e1e7;
+    background-color: #fff;
+    border-radius: 3px;
+    box-sizing: content-box;
+}
+.login-text-short {
+    width: 118px;
+}
+.login-code-wrap {
+    margin-bottom: 15px;
+}
+.login-get-code {
+    width: 132px;
+    height: 40px;
+    cursor: pointer;
+    color: #767676;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    background-color: #eee;
+    border:0;
+    padding:0;
+    &:hover{
+    background:#D5D5D5
+}
+}
+
+.login-fun-wrap {
+    margin-bottom: 15px;
+
+
+    .login-forget {
+        float: right;
+        color: #999;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        line-height: 1.5
+    }
+}
+
+.login-submit {
+    cursor: pointer;
+    margin-bottom: 15px;
+    background-color: #27d5bf;
+    color: #fff;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    border-radius: 3px;
+    overflow: visible;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    outline: none;
+        padding: 0;
+        border: 0;
+        &:hover{
+            background:#3AE9D3
+        }
+    
+}
+.ui-login-qq, .ui-login-third, .ui-login-weibo, .ui-login-weixin {
+    background-image: url(../images/ui.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.ui-login-weibo {
+    background-position: 0 -159px;
+    height: 24px;
+    width: 29px;
+}
+.ui-login-weixin {
+    background-position: 0 -226px;
+    height: 23px;
+    width: 28px;
+}
+.ui-login-qq {
+    background-position: 0 -52px;
+    height: 23px;
+    width: 22px;
+}
+
+.login-third-wrap {
+    margin: 15px 0;
+    .third-text {
+        line-height: 26px;
+    }
+    span {
+        float: left;
+        width: 25%;
+        text-align: center;
+        color: #999;
+    }
+    a {
+        font-size: 0;
+        overflow: hidden;
+    }
+}
+
+
+.area-code-content:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 24px;
+    border-right: solid 1px #ddd;
+    top: 8px;
+    right: -6px;
+}
+.zhezhao{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    opacity: 0.2;
+    background-color: black;
+    display: none;
+}
+.dialog{
+    display:none;
+}

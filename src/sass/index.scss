@@ -1,0 +1,27 @@
+@mixin center(){
+	margin:0 auto;
+	width:1200px
+}
+@mixin floatli($w,$h){
+	margin:0;
+	li{
+		float: left;
+		width:$w;
+		line-height:$h;
+		text-align:center;
+	}
+}
+@mixin shadow{
+	&:hover{
+		box-shadow:3px 3px 15px -4px #888
+	}
+}
+@import 'header';
+@import 'footer';
+@import 'main';
+@import 'dialog';
+
+.wrapper{
+	@include center;
+}
+

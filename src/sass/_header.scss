@@ -1,0 +1,310 @@
+header {
+   
+    height: 195px;
+    width: 100%;
+    .head {
+        height: 30px;
+        background: #1c1d1e;
+        .logo {
+            float: left;
+        }
+        ul {
+            float: right;
+            @include floatli(155px, 30px);
+            color: #9B9B9C;
+            li {
+                cursor: pointer;
+                position: relative;
+            }
+            li:nth-of-type(3) {
+                width: 90px;
+                text-align: right;
+            }
+        }
+        .popsina,
+        .popweixin {
+            display: none;
+            position: absolute;
+            img {
+                width: 100%;
+            }
+        }
+        .scan {
+            font-size: 14px;
+            color: #ff2c72;
+            margin-top: -10px;
+            text-align: center;
+        }
+        .scanMore {
+            font-size: 14px;
+            color: #1f2021;
+            text-align: center;
+            margin-top: -10px;
+        }
+    }
+    .bar {
+        background: #1f2122;
+        border-bottom: 1px solid #4c4d4e;
+        height: 130px;
+        .index {
+            float: left;
+            margin-top: 28px
+        }
+        .search {
+            position: relative;
+            float: left;
+            margin: 45px 0 0 230px;
+            width: 451px;
+            height: 38px;
+            background: url(../images/search_icon.png) no-repeat -1px -44px;
+            &>a {
+                position: absolute;
+                top: 0;
+                right: 15px;
+                display: block;
+                width: 24px;
+                height: 39px;
+                background: url(../images/search_icon.png) -461px 0 no-repeat;
+            }
+        }
+        .searchcontent {
+            position: absolute;
+            top: 37px;
+            left: 16px;
+            z-index: 10;
+            width: 418px;
+            border-radius: 0 0 13px 13px;
+            border: 1px solid #ff2c72;
+            background: #fff;
+            p {
+                position: relative;
+                height: 30px;
+                border-bottom: #ececec 1px solid;
+                text-align: center;
+                line-height: 30px;
+                font-size: 12px;
+                width: 392px;
+                margin: 0 13px 0 13px;
+            }
+            ul {
+                padding-bottom: 10px
+            }
+            li {
+                padding: 0 13px;
+                width: 392px;
+                height: 27px;
+                font-size: 14px;
+                line-height: 27px;
+                &:hover {
+                    background: #ececec;
+                }
+                a {
+                    display: inline-block;
+                    width: 390px;
+                    color: #000;
+                }
+                a:hover {
+                    color: #ff2c72;
+                    text-decoration: underline;
+                }
+            }
+        }
+        input {
+            position: absolute;
+            top: 2px;
+            left: 23px;
+            width: 415px;
+            height: 17px;
+            background: none;
+            color: #918f8f;
+            line-height: 17px;
+            padding-top: 9px;
+            overflow: hidden;
+            outline: none;
+            border: 0;
+            font: 400 12px Arial;
+        }
+        .mine {
+            float: right;
+            line-height: 130px;
+            &>a:nth-of-type(1) {
+                background: url(../images/avatar.png) no-repeat 0 51px;
+                padding-left: 35px;
+            }
+            &>a:nth-of-type(3) {
+                background: url(../images/cart-logo-v1.png) no-repeat 0 56px;
+                padding-left: 35px;
+                margin-right: 0;
+            }
+            .user_hover {
+                display:none;
+                position: relative;
+                float: left;
+                p {
+                        display: inline-block;
+    margin-left: 5px;
+    color: #fff;
+    vertical-align: middle;
+    line-height: 129px;
+                }
+                .info_box{
+                    display: none;
+                }
+            }
+            span {
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-top: 8px solid #ff2c72;
+                border-right: 5px solid transparent;
+                border-left: 5px solid transparent;
+                vertical-align: middle;
+            }
+            .info_box {
+                position: absolute;
+                z-index: 22;
+                top: 80px;
+                left: 10px;
+                display: block;
+                padding: 0 6px;
+                width: 66px;
+                border-radius: 10px;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -o-border-radius: 10px;
+                -ms-border-radius: 10px;
+                background: rgba(41, 44, 45, 0.9);
+                filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#e5000000', EndColorStr='#e5000000');
+                li {
+                    border-bottom: 1px solid #1f2122;
+                    color: #979798;
+                    text-align: center;
+                    line-height: 33px;
+                    a {
+                        color: #979798;
+                        margin: 0;
+                        float: none;
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        background: #1f2122;
+        height: 35px;
+        .sort {
+            float: left;
+            position: relative;
+            width: 100px;
+            background: #191a1b;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            line-height: 35px;
+            cursor: pointer;
+            margin: 0 50px;
+            &:hover .artistListBox {
+                display: block
+            }
+        }
+        ul {
+            margin-left: 35px;
+            float: left;
+        }
+        ul li {
+            float: left;
+            margin-right: 44px;
+            padding: 0 15px;
+            height: 32px;
+            color: #f5f5f5;
+            font-size: 14px;
+            line-height: 35px;
+            a {
+                color:#f5f5f5 // &:visited {
+                //     color: #fff;
+                // }
+            } // {
+            //     border-bottom: 3px solid #ff2c72;
+            //     a{
+            //      color: #ff2c72;
+            //     }
+            // }
+        }
+    }
+}
+
+header .head li a {
+    color: #9B9B9C;
+}
+
+header .mine a {
+    color: #fff;
+    float: left;
+    margin: 0 10px;
+}
+
+header a:hover {
+    color: #ff2c72;
+}
+
+.artistListBox {
+    position: absolute;
+    top: 35px;
+    left: -50px;
+    z-index: 100;
+    display: none;
+    padding: 18px 0px 21px 50px;
+    width: 1100px;
+    background: #f3f3f3;
+    box-shadow: 3px 3px 20px #ccc;
+}
+
+.artist_list {
+    overflow: hidden;
+    h4 {
+        float: left;
+        margin-right: 35px;
+        color: #1f2021;
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: bold;
+        &:hover {
+            color: #ff2c72;
+            text-decoration: underline;
+        }
+        a {
+            color: #1f2021;
+        }
+    }
+    ul {
+        overflow: hidden;
+        width: 920px;
+        float: left;
+    }
+    li {
+        float: left;
+        margin-right: 8px;
+        margin-bottom: 12px;
+        width: 176px;
+        text-align: left;
+        line-height: 20px;
+        a {
+            color: #1f2021;
+            font-size: 14px;
+            &:hover {
+                color: #cb3567;
+                text-decoration: underline;
+            }
+        }
+    }
+    .idole_link {
+        display: inline-block;
+        background: url(../images/more.png) 0 -31px no-repeat;
+        width: 49px;
+        height: 17px;
+    }
+    .idole_link:hover {
+        background: url(../images/more.png) 0 -47px no-repeat;
+    }
+}
